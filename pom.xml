@@ -18,6 +18,7 @@
     <description>Spring Boot Initializr</description>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -69,6 +70,7 @@
         </dependency>
     </dependencies>
 
+
     <build>
         <finalName>initializr-service</finalName>
         <plugins>
@@ -83,7 +85,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <dotGitDirectory>${project.basedir}/../.git</dotGitDirectory>
+                    <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
                     <dateFormat>yyyy-MM-dd'T'HH:mm:ssZ</dateFormat>
                     <generateGitPropertiesFile>true</generateGitPropertiesFile>
                     <generateGitPropertiesFilename>
@@ -111,13 +113,15 @@
                         </goals>
                         <configuration>
                             <additionalProperties>
-                                <versions.spring-boot>${spring.boot.version}
+                                <versions.spring-boot>
+                                     ${spring.boot.version}
                                 </versions.spring-boot>
                             </additionalProperties>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 

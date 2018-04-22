@@ -28,7 +28,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Java6Assertions.entry;
 
 /**
- *
  * @author Stephane Nicoll
  */
 public class CloudFoundryInfoContributorTests {
